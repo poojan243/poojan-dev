@@ -244,7 +244,7 @@
         loop: true,
         autoplay: {
           delay: 7000,
-          disableOnInteraction: false
+          disableOnInteraction: true
         },
         slidesPerView: 'auto',
         pagination: {
