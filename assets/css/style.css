@@ -950,6 +950,14 @@ section {
   fill: #11dbcf;
 }
 
+.services .iconbox-popgreen:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-popgreen:hover .icon path {
+  fill: #4CAF50;;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
