@@ -959,6 +959,30 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Custom Iconbox 
+/*--------------------------------------------------------------*/
+
+.iconbox-teal {
+  background: linear-gradient(135deg, #a8e063, #56ab2f); /* Pop green gradient */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.iconbox-teal .icon i {
+  color: #4CAF50; /* Pop green color for icon */
+  font-size: 48px;
+  line-height: 0;
+}
+
+.iconbox-teal:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .section-header {
