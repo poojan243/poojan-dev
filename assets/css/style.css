@@ -288,7 +288,7 @@ h6 {
 
 @media (min-width: 1200px) {
   #hero {
-    background-size: auto 110%;
+    background-size: auto 125%;
     background-position: center;
   }
 }
@@ -296,7 +296,7 @@ h6 {
 /* Adjustments for medium screens (e.g., tablets) */
 @media (max-width: 1199px) and (min-width: 768px) {
   #hero {
-    background-size: auto 100%;
+    background-size: auto 125%;
     background-position: center;
   }
 }
@@ -304,7 +304,7 @@ h6 {
 /* Adjustments for small screens (e.g., mobile phones) */
 @media (max-width: 767px) {
   #hero {
-    background-size: auto 100%;
+    background-size: auto 130%;
     background-position: center;
   }
 }
