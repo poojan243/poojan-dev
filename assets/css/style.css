@@ -502,13 +502,18 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
+/* Default Styling for Skills Box */
 .skills .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
+  margin: 5px 0; /* Adding margin for separation */
+  text-align: left; /* Ensures all text is left-aligned */
 }
 
+/* Styling for Regular Skill Items */
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
@@ -520,20 +525,43 @@ section {
   font-size: 15px;
 }
 
-.skills .progress .skill .val {
+/* Styling for Few-Skills Items */
+.skills .progress .few-skills {
+  padding: 10px 0; /* Match padding with regular skills */
+  margin: 5px 0; /* Match margin with regular skills */
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600; /* Match font weight with regular skills */
+  font-family: "Poppins", sans-serif; /* Same font family */
+  color: #45505b; /* Match color with regular skills */
+  font-size: 15px; /* Match font size with regular skills */
+}
+
+/* Value Styling for Regular Skill and Few Skills */
+.skills .progress .skill .val, 
+.skills .progress .few-skills .val {
   float: right;
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .skills .progress {
+    height: auto; /* Allow auto height for small screens */
+    padding: 5px 0; /* Minimal padding for small screens */
+  }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
+  .skills .progress .skill, 
+  .skills .progress .few-skills {
+    font-size: 14px; /* Reduced font size for smaller screens */
+  }
+
+  .skills .progress .skill .val, 
+  .skills .progress .few-skills .val {
+    float: none; /* Remove float on small screens */
+    display: block; /* Display value below skill name */
+    margin-top: 3px; /* Minimal margin for spacing */
+  }
 }
 
 /*--------------------------------------------------------------
